@@ -514,3 +514,120 @@ table td:nth-child(2){
   position: absolute;
   top: 0;
 }
+
+
+/*============PUBLIC MOBILE RESPONSIVE============*/
+
+/*backgrounds*/
+
+@media only screen and (max-width: 600px) {
+  .public-bg {
+    display: flex;
+    justify-content: center
+  }
+  .bg-item,
+  .pod-item {
+    margin-bottom: 1rem;
+  }
+  .bg-item,
+  .pod-item,
+  .public-pods {
+    width: 100%;
+  }
+
+
+.public-pods{
+  display:none;
+}
+
+.public-bg div:nth-child(3){
+  display: none !important;
+}
+
+.public-bg div:nth-child(4){
+  width:500px;
+  height: 423px;
+  bottom: -20px;
+}
+
+/*Buttons*/
+.minus-btn{
+
+    width: 40px;
+    height: 40px;
+    bottom: 14%;
+    left: 22%;
+  
+  }   
+
+  .plus-btn {
+
+    width: 40px;
+    height: 40px;
+    bottom: 14%;
+    left: 45%;
+  }
+
+  .open-btn {
+   
+    width: 30px;
+    height: 30px;
+    bottom: 9%;
+    right: 17%;
+  }
+
+  .start-btn {
+
+    width: 60px;
+    height: 60px;
+    bottom: 13%;
+    left: 60%;
+
+  }
+
+  .public-buttons span {
+
+    font-size: 1em;
+    bottom: 16%;
+    left: 37%;
+
+  }
+
+  .public-progress {
+    position: absolute;
+    width: 35.69%;
+    height: 13px;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 21.4%;
+  }
+
+  .screen-left {
+    width: 24.3%;
+    height: 22.6%;
+    background: #71468a;
+    top: 50.7%;
+    left: 22.93%;
+    position: fixed;
+}
+
+.screen-right {
+  width: 25.55%;
+  height: 24.6%;
+  background: #F44336;
+  top: 48.7%;
+  right: 22.2%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.screen-right .image-responsive{
+  color: transparent;
+  width: 61px;
+  height: 61px;
+}
+}
