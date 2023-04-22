@@ -2,13 +2,20 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Background from './Background';
 import Progress from './Progress';
+import Container from './Container'
 
-import clickSound from '../public/sounds/click.mp3';
+import clickSound from '../public/sounds/click_effect.mp3';
 import homeSound from '../public/sounds/deploy.mp3';
 import connectSound from '../public/sounds/deploy.mp3'
 
 
 export default function Public() {
+
+    const currentSupply = 2555;
+    const totalSupply = 5555;
+
+
+
     const [count, setCount] = useState(3);
 
     const handleMinusClick = () => {
@@ -66,78 +73,85 @@ export default function Public() {
         <>
 
             <div className="public-main">
+                <Container>
+                    {/* webdapp background layers */}
+                    <Background />
 
-                {/* webdapp background layers */}
-                <Background />
+                    {/* Button group */}
+                    <div className="public-buttons">
 
-                {/* Button group */}
-                <div className="public-buttons">
+                        <button className="wallet-connect" onClick={handleConnectClick}>Connect</button>
 
-                    <button className="wallet-connect" onClick={handleConnectClick}>Connect</button>
+                        <div className="counter">
+                            <button className="minus-btn" onClick={handleMinusClick}>
 
-                    <div className="counter">
-                        <button className="minus-btn" onClick={handleMinusClick}>
+                            </button>
+                            <span>{count}</span>
+                            <button className="plus-btn" onClick={handlePlusClick}>
 
-                        </button>
-                        <span>{count}</span>
-                        <button className="plus-btn" onClick={handlePlusClick}>
-
-                        </button>
-                    </div>
-
-                    <button className="start-btn" onClick={handleStartClick}>
-
-                    </button>
-
-                    <button className="open-btn" onClick={handleOpenClick}>
-
-                    </button>
-
-                    <button className="public-home" onClick={handleHomeClick}></button>
-
-                    <div className="public-progress">
-                    <Progress/>
-                    </div>
-                </div>
-
-                {/*screens*/}
-                <div className="public-screen">
-
-                    <div className="screen-left">
-                        <Image src="/assets/test.png" layout="fill" objectFit="containe" alt="Image description" />
-                    </div>
-
-                    <div className="screen-right">
-
-                        <div>
-                            <Image src="/assets/test.png" width={100} height={100} objectFit="containe" alt="Image description" />
+                            </button>
                         </div>
 
-                        <div>
-                            <table>
+                        <button className="start-btn" onClick={handleStartClick} />
 
-                                <tbody>
-                                    <tr>
-                                        <td>Status</td>
-                                        <td>Paused</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Network</td>
-                                        <td>Ethereum mainnet</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Price</td>
-                                        <td>0ETh</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+
+
+                        <button className="open-btn" onClick={handleOpenClick} />
+
+
+
+                        <button className="public-home" onClick={handleHomeClick} />
+
+                        <div className="public-progress">
+                            <Progress current={currentSupply} total={totalSupply} />
+                        </div>
+                    </div>
+
+                    {/*screens*/}
+                    <div className="public-screen">
+
+                        <div className="screen-left">
+                            <video loop autoPlay muted>
+                                {/* <source src="video.mp4" type="video/mp4" /> */}
+                                <source src="/assets/md-video.webm" type="video/webm" />
+                                {/* <img src="fallback.jpg" alt="Video fallback image." /> */}
+                            </video>
+                            {/* <Image src="/assets/test.png" layout="fill" objectFit="containe" alt="Image description" /> */}
+                        </div>
+
+                        <div className="screen-right">
+
+                            <div>
+                                <Image src="/assets/md3.png" width={150} height={100} objectFit="containe" alt="Image description" />
+                            </div>
+
+                            <div>
+                                <table>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>Status</td>
+                                            <td>Paused</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Network</td>
+                                            <td>Ethereum mainnet</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Price</td>
+                                            <td>0ETh</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
 
                         </div>
 
                     </div>
-
-                </div>
+                </Container>
             </div>
+
         </>
     )
 }
