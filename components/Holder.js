@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import BackgroundHolder from './BackgroundHolder';
-import Progress from './Progress';
+import Hprogress from './Hprogress';
 import Container from './Container'
 
 import clickSound from '../public/sounds/click_effect.mp3';
@@ -129,8 +129,8 @@ export default function Holder() {
 
                         <button className="public-home" onClick={handleHomeClick} />
 
-                        <div className="public-progress">
-                            <Progress current={currentSupply} total={totalSupply} />
+                        <div className="holders-progress">
+                            <Hprogress current={currentSupply} total={totalSupply} />
                         </div>
                     </div>
 

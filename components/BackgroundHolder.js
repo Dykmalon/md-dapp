@@ -21,7 +21,7 @@ export default function BackgroundHolder() {
                     <Image src="/assets/pods.png" layout="fill" objectFit="containe" alt="Image description" />
                 </div>
 
-                <div style={{ top: '-4px'}}>
+                <div>
                     <Image src="/assets/hmachine.png" layout="fill" objectFit="containe" alt="Image description"   />
                 </div>
 
