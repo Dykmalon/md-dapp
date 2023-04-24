@@ -71,7 +71,6 @@ export default function Public() {
 
     return (
         <>
-
             <div className="public-main">
                 <Container>
                     {/* webdapp background layers */}
@@ -83,40 +82,34 @@ export default function Public() {
                         <button className="wallet-connect" onClick={handleConnectClick}>Connect</button>
 
                         <div className="counter">
-                            <button className="minus-btn" onClick={handleMinusClick}>
 
-                            </button>
+                            <button className="minus-btn" onClick={handleMinusClick} />
                             <span>{count}</span>
-                            <button className="plus-btn" onClick={handlePlusClick}>
+                            <button className="plus-btn" onClick={handlePlusClick} />
 
-                            </button>
                         </div>
 
                         <button className="start-btn" onClick={handleStartClick} />
 
-
-
                         <button className="open-btn" onClick={handleOpenClick} />
-
-
 
                         <button className="public-home" onClick={handleHomeClick} />
 
                         <div className="public-progress">
                             <Progress current={currentSupply} total={totalSupply} />
                         </div>
+
                     </div>
 
                     {/*screens*/}
                     <div className="public-screen">
 
                         <div className="screen-left">
+
                             <video loop autoPlay muted>
-                                {/* <source src="video.mp4" type="video/mp4" /> */}
                                 <source src="/assets/md-video.webm" type="video/webm" />
-                                {/* <img src="fallback.jpg" alt="Video fallback image." /> */}
                             </video>
-                            {/* <Image src="/assets/test.png" layout="fill" objectFit="containe" alt="Image description" /> */}
+
                         </div>
 
                         <div className="screen-right">
@@ -143,15 +136,11 @@ export default function Public() {
                                         </tr>
                                     </tbody>
                                 </table>
-
                             </div>
-
                         </div>
-
                     </div>
                 </Container>
             </div>
-
         </>
     )
 }

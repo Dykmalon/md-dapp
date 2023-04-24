@@ -144,8 +144,6 @@ main {
     position: relative;
     width: 100vw;
     height: 100vh;
-    /* background-image: url("../public/assets/machine.png"), url("../public/assets/pods.png"), url("../public/assets/background.png"); */
-    background-repeat: no-repeat;
     background-size: cover;
 
 
@@ -383,11 +381,10 @@ main {
         background-size: cover;
         background-color: transparent;
         border: unset;
-        /* animation: button-click 0.5s ease-in-out; */
         position: fixed;
         bottom: 14%;
         right: 25%;
-        /* filter: brightness(1.5); */
+
 
       }
 
@@ -423,12 +420,238 @@ main {
         background-size: cover;
         background-color: transparent;
         border: unset;
-        width: 30px;
+        width: 33px;
         height: 30px;
         position: fixed;
         top: 6.5%;
         left: 31.5%;
       }
+
+
+      /*HOLDER BUTTONS*/
+
+      .holder-leftBtns {
+        position: fixed;
+        bottom: 20%;
+        left: 28%;
+        display: flex;
+
+
+      }
+
+      .leftBtn {
+        background-image: url('../public/assets/left-arrows/left-up.png');
+        width: 120px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: unset;
+
+
+      }
+
+      .leftBtn:hover {
+        background-image: url('../public/assets/left-arrows/left-hover.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      @keyframes leftBtn-animate {
+        0% {
+          background-image: url('../public/assets/left-arrows/left-up.png');
+        }
+
+        50% {
+          background-image: url('../public/assets/left-arrows/left-down.png');
+        }
+
+        100% {
+          background-image: url('../public/assets/left-arrows/left-up.png');
+        }
+      }
+
+      .leftBtn-clicked {
+        animation: leftBtn-animate 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+
+
+      /*RIGHT*/
+
+      .rightBtn {
+        background-image: url('../public/assets/left-arrows/right-up.png');
+        width: 120px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: unset;
+
+
+      }
+
+      .rightBtn:hover {
+        background-image: url('../public/assets/left-arrows/right-hover.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      @keyframes rightBtn-animate {
+        0% {
+          background-image: url('../public/assets/left-arrows/right-up.png');
+        }
+
+        50% {
+          background-image: url('../public/assets/left-arrows/right-down.png');
+        }
+
+        100% {
+          background-image: url('../public/assets/left-arrows/right-up.png');
+        }
+      }
+
+      .rightBtn-clicked {
+        animation: rightBtn-animate 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+
+      /*START*/
+
+
+      .HolderstartBtn {
+        background-image: url('../public/assets/start/start-up.png');
+        width: 170px;
+        height: 170px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: unset;
+
+
+      }
+
+      .HolderstartBtn:hover {
+        background-image: url('../public/assets/start/start-hover.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      @keyframes HolderstartBtn-animate {
+        0% {
+          background-image: url('../public/assets/start/start-up.png');
+        }
+
+        50% {
+          background-image: url('../public/assets/start/start-down.png');
+        }
+
+        100% {
+          background-image: url('../public/assets/start/start-up.png');
+        }
+      }
+
+      .HolderstartBtn-clicked {
+        animation: HolderstartBtn-animate 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+
+      .holder-start {
+
+        position: fixed;
+        bottom: 17%;
+        left: 44.5%;
+        display: flex;
+
+      }
+
+      /*RIGHT-RIGHT*/
+
+      .holder-rightBtns {
+        position: fixed;
+        bottom: 20%;
+        left: 56%;
+        display: flex;
+
+
+      }
+
+      .righRtBtn {
+        background-image: url('../public/assets/left-arrows/left-up.png');
+        width: 120px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: unset;
+
+
+      }
+
+      .righRtBtn:hover {
+        background-image: url('../public/assets/left-arrows/left-hover.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      @keyframes righRtBtn-animate {
+        0% {
+          background-image: url('../public/assets/left-arrows/left-up.png');
+        }
+
+        50% {
+          background-image: url('../public/assets/left-arrows/left-down.png');
+        }
+
+        100% {
+          background-image: url('../public/assets/left-arrows/left-up.png');
+        }
+      }
+
+      .righRtBtn-clicked {
+        animation: righRtBtn-animate 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+
+      // right
+
+      .rightLBtn {
+        background-image: url('../public/assets/left-arrows/right-up.png');
+        width: 120px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: unset;
+
+
+      }
+
+      .rightLBtn:hover {
+        background-image: url('../public/assets/left-arrows/right-hover.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      @keyframes rightLBtn-animate {
+        0% {
+          background-image: url('../public/assets/left-arrows/right-up.png');
+        }
+
+        50% {
+          background-image: url('../public/assets/left-arrows/right-down.png');
+        }
+
+        100% {
+          background-image: url('../public/assets/left-arrows/right-up.png');
+        }
+      }
+
+      .rightLBtn-clicked {
+        animation: rightLBtn-animate 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+
 
       /*WALLET CONNETION*/
 
@@ -505,6 +728,17 @@ main {
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
+      video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     .screen-right div:nth-child(1) {}
@@ -562,9 +796,137 @@ main {
       transform: translate(-50%, -50%);
       font-size: 14px;
       color: #333;
-      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
+
+    /*STICKY NOTES*/
+
+    .sticky-notes {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 6;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transform-style: preserve-3d;
+
+      div:nth-child(1) {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        left: 27.4%;
+        top: 17%;
+        transform-style: preserve-3d;
+
+
+        .sticky1 {
+          transform-style: preserve-3d;
+          animation: sticky1-anim 7s ease-in-out infinite;
+        }
+
+        @keyframes sticky1-anim {
+          0% {
+            transform: rotate(-5deg);
+          }
+
+          50% {
+            transform: rotate(5deg);
+          }
+
+          100% {
+            transform: rotate(-5deg);
+          }
+        }
+
+      }
+
+      div:nth-child(2) {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        left: 48.5%;
+        top: 37%;
+
+        .sticky2 {
+          transform-style: preserve-3d;
+          animation: sticky2-anim 7s ease-in-out infinite;
+        }
+
+        @keyframes sticky2-anim {
+          0% {
+            transform: rotate(7deg);
+          }
+
+          50% {
+            transform: rotate(-7deg);
+          }
+
+          100% {
+            transform: rotate(7deg);
+          }
+        }
+
+  
+      }
+
+      div:nth-child(3) {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        left: 41.5%;
+        bottom: 12%;
+
+        .sticky3 {
+          transform-style: preserve-3d;
+          animation: sticky3-anim 7s ease-in-out infinite;
+        }
+
+        @keyframes sticky3-anim {
+          0% {
+            transform: rotate(-6deg);
+          }
+
+          50% {
+            transform: rotate(5deg);
+          }
+
+          100% {
+            transform: rotate(-6deg);
+          }
+        }
+
+      }
+
+      div:nth-child(4) {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        right: 26.5%;
+        bottom: 3%;
+
+        .sticky4 {
+          transform-style: preserve-3d;
+          animation: sticky4-anim 7s ease-in-out infinite;
+        }
+
+        @keyframes sticky4-anim {
+          0% {
+            transform: rotate(-4deg);
+          }
+
+          50% {
+            transform: rotate(7deg);
+          }
+
+          100% {
+            transform: rotate(-4deg);
+          }
+        }
+      }
+
+    }
   }
 
 }
