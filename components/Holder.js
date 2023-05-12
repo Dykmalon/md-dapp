@@ -78,8 +78,6 @@ export default function Holder() {
         }, 500);
     };
 
-
-
     const handleHomeClick = () => {
         const clickAudio = new Audio(homeSound);
         clickAudio.play();
@@ -88,6 +86,11 @@ export default function Holder() {
         const clickAudio = new Audio(connectSound);
         clickAudio.play();
     }
+
+    //images hover//
+    //1
+
+
 
     return (
         <>
@@ -104,9 +107,15 @@ export default function Holder() {
 
                         <div className="holder-leftBtns">
 
-                            <button className="leftBtn" onClick={handleLLeftClick} />
+                            <button
+                                className="leftBtn"
+                                onClick={handleLLeftClick}
 
-                            <button className="rightBtn" onClick={handleRBtnClick} />
+                            />
+
+                            <button className="rightBtn" 
+                                    onClick={handleRBtnClick} 
+                            />
 
                         </div>
 

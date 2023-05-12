@@ -134,6 +134,811 @@ main {
 
 }
 
+//all css // 
+
+.public-main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+
+
+  .public-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .public-bg div:nth-child(1) {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+  }
+
+  .public-bg div:nth-child(2) {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+  }
+
+  .public-bg div:nth-child(3) {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+
+  }
+
+  .public-bg div:nth-child(4) {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+
+  }
+
+  /*=======Public-pods=======*/
+
+  .public-pods {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .public-pods div:nth-child(1) {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 7;
+    opacity: 0.4;
+
+  }
+
+  .public-pods div:nth-child(2) {
+
+    position: absolute;
+    height: 19vw;
+    width: 15vw;
+    left: 7%;
+    top: 29%;
+    z-index: 6;
+    filter: blur(2px);
+  }
+
+  .public-pods div:nth-child(3) {
+
+    position: absolute;
+    height: 19vw;
+    width: 15vw;
+    right: 6%;
+    top: 29%;
+    z-index: 6;
+    filter: blur(2px);
+  }
+
+  /*========PUBLIC BUTTONS=======*/
+
+  .public-buttons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // max-width: 1600px;
+    // max-height: 1000px;
+
+
+    /*MINUS*/
+
+    .minus-btn {
+      background-image: url('../public/assets/minus/minus-up.png');
+      width: 120px;
+      height: 120px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+      border: unset;
+      /* animation: button-click 0.5s ease-in-out; */
+      position: fixed;
+      bottom: 20%;
+      left: 29%;
+      filter: brightness(1.5);
+
+    }
+
+    .minus-btn:hover {
+      background-image: url('../public/assets/minus/minus-hover.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @keyframes minus-animate {
+      0% {
+        background-image: url('../public/assets/minus/minus-up.png');
+      }
+
+      50% {
+        background-image: url('../public/assets/minus/minus-down.png');
+      }
+
+      100% {
+        background-image: url('../public/assets/minus/minus-up.png');
+      }
+    }
+
+    .minus-clicked {
+      animation: minus-animate 0.5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+    /*PLUS*/
+
+    .plus-btn {
+
+      background-image: url('../public/assets/plus/plus-up.png');
+      width: 120px;
+      height: 120px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+      border: unset;
+      /* animation: button-click 0.5s ease-in-out; */
+      position: fixed;
+      bottom: 20%;
+      left: 46%;
+      filter: brightness(1.5);
+
+    }
+
+    .plus-btn:hover {
+      background-image: url('../public/assets/plus/plus-hover.png');
+    }
+
+    @keyframes plus-animate {
+      0% {
+        background-image: url('../public/assets/plus/plus-up.png');
+      }
+
+      50% {
+        background-image: url('../public/assets/plus/plus-down.png');
+      }
+
+      100% {
+        background-image: url('../public/assets/plus/plus-up.png');
+      }
+    }
+
+    .plus-clicked {
+      animation: plus-animate 0.5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+    /*START*/
+
+    .start-btn {
+
+      background-image: url('../public/assets/start/start-up.png');
+      width: 170px;
+      height: 170px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+      border: unset;
+      /* animation: button-click 0.5s ease-in-out; */
+      position: fixed;
+      bottom: 17%;
+      left: 58%;
+      /* filter: brightness(1.5); */
+
+    }
+
+    .start-btn:hover {
+      background-image: url('../public/assets/start/start-hover.png');
+    }
+
+    @keyframes start-animate {
+      0% {
+        background-image: url('../public/assets/start/start-up.png');
+      }
+
+      50% {
+        background-image: url('../public/assets/start/start-down.png');
+      }
+
+      100% {
+        background-image: url('../public/assets/start/start-up.png');
+      }
+    }
+
+    .start-clicked {
+      animation: start-animate 0.5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+    /*OPENSEA-PUBLIC*/
+
+    .open-btn {
+
+      background-image: url('../public/assets/open/os-up.png');
+      width: 80px;
+      height: 80px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+      border: unset;
+      position: fixed;
+      bottom: 14%;
+      right: 25%;
+
+
+    }
+
+    .open-btn:hover {
+      background-image: url('../public/assets/open/os-hover.png');
+    }
+
+    @keyframes open-animate {
+      0% {
+        background-image: url('../public/assets/open/os-up.png');
+      }
+
+      50% {
+        background-image: url('../public/assets/open/os-down.png');
+      }
+
+      100% {
+        background-image: url('../public/assets/open/os-up.png');
+      }
+    }
+
+    .open-clicked {
+      animation: open-animate 0.5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+
+    /*Public home*/
+
+    .public-home {
+      background-image: url('../public/assets/home.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+      border: unset;
+      width: 23px;
+      height: 20px;
+      position: fixed;
+      top: 6.5%;
+      left: 31.5%;
+    }
+
+
+    /*HOLDER BUTTONS*/
+
+    .holder-leftBtns {
+      position: fixed;
+      bottom: 20%;
+      left: 28%;
+      display: flex;
+
+
+    }
+
+    .leftBtn {
+      background-image: url('../public/assets/left-arrows/left-up.png');
+      width: 120px;
+      height: 120px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+      border: unset;
+
+
+    }
+
+    .leftBtn:hover {
+      background-image: url('../public/assets/left-arrows/left-hover.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @keyframes leftBtn-animate {
+      0% {
+        background-image: url('../public/assets/left-arrows/left-up.png');
+      }
+
+      50% {
+        background-image: url('../public/assets/left-arrows/left-down.png');
+      }
+
+      100% {
+        background-image: url('../public/assets/left-arrows/left-up.png');
+      }
+    }
+
+    .leftBtn-clicked {
+      animation: leftBtn-animate 0.5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+    
+
+
+    /*RIGHT*/
+
+    .rightBtn {
+      background-image: url('../public/assets/left-arrows/right-up.png');
+      width: 120px;
+      height: 120px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+      border: unset;
+
+
+    }
+
+    .rightBtn:hover {
+      background-image: url('../public/assets/left-arrows/right-hover.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @keyframes rightBtn-animate {
+      0% {
+        background-image: url('../public/assets/left-arrows/right-up.png');
+      }
+
+      50% {
+        background-image: url('../public/assets/left-arrows/right-down.png');
+      }
+
+      100% {
+        background-image: url('../public/assets/left-arrows/right-up.png');
+      }
+    }
+
+    .rightBtn-clicked {
+      animation: rightBtn-animate 0.5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+    /*START*/
+
+
+    .HolderstartBtn {
+      background-image: url('../public/assets/melt/melt_up.png');
+      width: 170px;
+      height: 170px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+      border: unset;
+
+
+    }
+
+    .HolderstartBtn:hover {
+      background-image: url('../public/assets/melt/melt_hover.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @keyframes HolderstartBtn-animate {
+      0% {
+        background-image: url('../public/assets/melt/melt_up.png');
+      }
+
+      50% {
+        background-image: url('../public/assets/melt/melt_down.png');
+      }
+
+      100% {
+        background-image: url('../public/assets/melt/melt_up.png');
+      }
+    }
+
+    .HolderstartBtn-clicked {
+      animation: HolderstartBtn-animate 0.5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+    .holder-start {
+
+      position: fixed;
+      bottom: 17%;
+      left: 44.5%;
+      display: flex;
+
+    }
+
+    /*RIGHT-RIGHT*/
+
+    .holder-rightBtns {
+      position: fixed;
+      bottom: 20%;
+      left: 56%;
+      display: flex;
+
+
+    }
+
+    .righRtBtn {
+      background-image: url('../public/assets/left-arrows/left-up.png');
+      width: 120px;
+      height: 120px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+      border: unset;
+
+
+    }
+
+    .righRtBtn:hover {
+      background-image: url('../public/assets/left-arrows/left-hover.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @keyframes righRtBtn-animate {
+      0% {
+        background-image: url('../public/assets/left-arrows/left-up.png');
+      }
+
+      50% {
+        background-image: url('../public/assets/left-arrows/left-down.png');
+      }
+
+      100% {
+        background-image: url('../public/assets/left-arrows/left-up.png');
+      }
+    }
+
+    .righRtBtn-clicked {
+      animation: righRtBtn-animate 0.5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+    // right
+
+    .rightLBtn {
+      background-image: url('../public/assets/left-arrows/right-up.png');
+      width: 120px;
+      height: 120px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+      border: unset;
+
+
+    }
+
+    .rightLBtn:hover {
+      background-image: url('../public/assets/left-arrows/right-hover.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @keyframes rightLBtn-animate {
+      0% {
+        background-image: url('../public/assets/left-arrows/right-up.png');
+      }
+
+      50% {
+        background-image: url('../public/assets/left-arrows/right-down.png');
+      }
+
+      100% {
+        background-image: url('../public/assets/left-arrows/right-up.png');
+      }
+    }
+
+    .rightLBtn-clicked {
+      animation: rightLBtn-animate 0.5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+
+    /*WALLET CONNETION*/
+
+    .wallet-connect {
+      text-transform: uppercase;
+      font-family: "ultraquick";
+      background-color: transparent;
+      border: unset;
+      font-weight: 400;
+      font-size: 1.4em;
+      color: black;
+      position: fixed;
+      top: 6.6%;
+      right: 33.5%;
+    }
+
+
+    /*====Public quan====*/
+
+    span {
+
+      font-family: "robotInvaders";
+      font-size: 4em;
+      position: fixed;
+      bottom: 23%;
+      left: 40%;
+      color: #ffd82a;
+    }
+
+
+  }
+
+
+  /*=========Screens========*/
+
+  .public-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 6;
+    max-width: 1600px;
+    max-height: 1000px;
+  }
+
+  .screen-left {
+    width: 18.3%;
+    height: 34.6%;
+    background: #71468a;
+    top: 21.7%;
+    left: 29.67%;
+    position: fixed;
+
+    video {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .screen-right {
+    width: 19.55%;
+    height: 37.6%;
+    background: black;
+    top: 18.7%;
+    right: 29.2%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    video {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .screen-right div:nth-child(1) {}
+
+  /*table*/
+  table {
+
+    border-collapse: separate;
+    border-spacing: 20px;
+  }
+
+  td {
+    text-transform: uppercase;
+    font-family: "ultraquick";
+    font-weight: 400;
+    font-size: 1em;
+  }
+
+  table td:nth-child(2) {
+    text-align: end;
+  }
+
+  /*===================PROGRESS BAR==================*/
+
+  .public-progress {
+    position: absolute;
+    width: 26.69%;
+    height: 20px;
+    /* overflow: hidden; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 34.85%;
+  }
+
+  .holders-progress{
+    position: absolute;
+    width: 26.69%;
+    height: 20px;
+    /* overflow: hidden; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 34.55%;
+
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ccc;
+    // border-radius: 10px;
+    position: relative;
+  }
+
+  .progress-bar .fill {
+    height: 100%;
+    // border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .progress-bar .label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+  /*STICKY NOTES*/
+
+  .sticky-notes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+
+    div:nth-child(1) {
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      left: 27.4%;
+      top: 17%;
+      transform-style: preserve-3d;
+
+
+      .sticky1 {
+        transform-style: preserve-3d;
+        animation: sticky1-anim 7s ease-in-out infinite;
+      }
+
+      @keyframes sticky1-anim {
+        0% {
+          transform: rotate(-5deg);
+        }
+
+        50% {
+          transform: rotate(5deg);
+        }
+
+        100% {
+          transform: rotate(-5deg);
+        }
+      }
+
+    }
+
+    div:nth-child(2) {
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      left: 48.5%;
+      top: 37%;
+
+      .sticky2 {
+        transform-style: preserve-3d;
+        animation: sticky2-anim 7s ease-in-out infinite;
+      }
+
+      @keyframes sticky2-anim {
+        0% {
+          transform: rotate(7deg);
+        }
+
+        50% {
+          transform: rotate(-7deg);
+        }
+
+        100% {
+          transform: rotate(7deg);
+        }
+      }
+
+
+    }
+
+    div:nth-child(3) {
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      left: 41.5%;
+      bottom: 9%;
+
+      .sticky3 {
+        transform-style: preserve-3d;
+        animation: sticky3-anim 7s ease-in-out infinite;
+      }
+
+      @keyframes sticky3-anim {
+        0% {
+          transform: rotate(-6deg);
+        }
+
+        50% {
+          transform: rotate(5deg);
+        }
+
+        100% {
+          transform: rotate(-6deg);
+        }
+      }
+
+    }
+
+    div:nth-child(4) {
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      right: 26.5%;
+      bottom: 3%;
+
+      .sticky4 {
+        transform-style: preserve-3d;
+        animation: sticky4-anim 7s ease-in-out infinite;
+      }
+
+      @keyframes sticky4-anim {
+        0% {
+          transform: rotate(-4deg);
+        }
+
+        50% {
+          transform: rotate(7deg);
+        }
+
+        100% {
+          transform: rotate(-4deg);
+        }
+      }
+    }
+
+  }
+}
+
+
 
 /*=============PUBLIC-CSS============*/
 
@@ -420,8 +1225,8 @@ main {
         background-size: cover;
         background-color: transparent;
         border: unset;
-        width: 33px;
-        height: 30px;
+        width: 23px;
+        height: 20px;
         position: fixed;
         top: 6.5%;
         left: 31.5%;
@@ -476,6 +1281,8 @@ main {
         animation-fill-mode: forwards;
       }
 
+      
+
 
       /*RIGHT*/
 
@@ -520,7 +1327,7 @@ main {
 
 
       .HolderstartBtn {
-        background-image: url('../public/assets/start/start-up.png');
+        background-image: url('../public/assets/melt/melt_up.png');
         width: 170px;
         height: 170px;
         background-repeat: no-repeat;
@@ -532,22 +1339,22 @@ main {
       }
 
       .HolderstartBtn:hover {
-        background-image: url('../public/assets/start/start-hover.png');
+        background-image: url('../public/assets/melt/melt_hover.png');
         background-repeat: no-repeat;
         background-size: cover;
       }
 
       @keyframes HolderstartBtn-animate {
         0% {
-          background-image: url('../public/assets/start/start-up.png');
+          background-image: url('../public/assets/melt/melt_up.png');
         }
 
         50% {
-          background-image: url('../public/assets/start/start-down.png');
+          background-image: url('../public/assets/melt/melt_down.png');
         }
 
         100% {
-          background-image: url('../public/assets/start/start-up.png');
+          background-image: url('../public/assets/melt/melt_up.png');
         }
       }
 
@@ -887,7 +1694,7 @@ main {
         height: 90px;
         position: absolute;
         left: 41.5%;
-        bottom: 12%;
+        bottom: 9%;
 
         .sticky3 {
           transform-style: preserve-3d;
@@ -942,6 +1749,254 @@ main {
 
 }
 
+//HOLDERS 991 max-width 
+@media (min-width: 992px) and (max-width: 1280px)  {
+
+ /*HOLDER BUTTONS*/
+
+ .holder-leftBtns {
+  position: fixed;
+  bottom: 20%;
+  left: 28%;
+  display: flex;
+
+
+}
+
+.leftBtn {
+  background-image: url('../public/assets/left-arrows/left-up.png');
+  width:96px!important;
+  height: 96px!important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: unset;
+
+
+}
+
+.leftBtn:hover {
+  background-image: url('../public/assets/left-arrows/left-hover.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes leftBtn-animate {
+  0% {
+    background-image: url('../public/assets/left-arrows/left-up.png');
+  }
+
+  50% {
+    background-image: url('../public/assets/left-arrows/left-down.png');
+  }
+
+  100% {
+    background-image: url('../public/assets/left-arrows/left-up.png');
+  }
+}
+
+.leftBtn-clicked {
+  animation: leftBtn-animate 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+/*RIGHT*/
+
+.rightBtn {
+  background-image: url('../public/assets/left-arrows/right-up.png');
+  width: 96px!important;
+  height: 96px!important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: unset;
+
+
+}
+
+.rightBtn:hover {
+  background-image: url('../public/assets/left-arrows/right-hover.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes rightBtn-animate {
+  0% {
+    background-image: url('../public/assets/left-arrows/right-up.png');
+  }
+
+  50% {
+    background-image: url('../public/assets/left-arrows/right-down.png');
+  }
+
+  100% {
+    background-image: url('../public/assets/left-arrows/right-up.png');
+  }
+}
+
+.rightBtn-clicked {
+  animation: rightBtn-animate 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+/*START*/
+
+
+.HolderstartBtn {
+  background-image: url('../public/assets/melt/melt_up.png');
+  width: 150px!important;
+  height: 150px!important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: unset;
+
+
+}
+
+.HolderstartBtn:hover {
+  background-image: url('../public/assets/melt/melt_hover.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes HolderstartBtn-animate {
+  0% {
+    background-image: url('../public/assets/melt/melt_up.png');
+  }
+
+  50% {
+    background-image: url('../public/assets/melt/melt_down.png');
+  }
+
+  100% {
+    background-image: url('../public/assets/melt/melt_up.png');
+  }
+}
+
+.HolderstartBtn-clicked {
+  animation: HolderstartBtn-animate 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.holder-start {
+
+  position: fixed;
+  bottom: 17%;
+  left: 44%!important;
+  display: flex;
+
+}
+
+/*RIGHT-RIGHT*/
+
+.holder-rightBtns {
+  position: fixed;
+  bottom: 20%;
+  left: 56%;
+  display: flex;
+
+
+}
+
+.righRtBtn {
+  background-image: url('../public/assets/left-arrows/left-up.png');
+  width: 96px!important;
+  height: 96px!important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: unset;
+
+
+}
+
+.righRtBtn:hover {
+  background-image: url('../public/assets/left-arrows/left-hover.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes righRtBtn-animate {
+  0% {
+    background-image: url('../public/assets/left-arrows/left-up.png');
+  }
+
+  50% {
+    background-image: url('../public/assets/left-arrows/left-down.png');
+  }
+
+  100% {
+    background-image: url('../public/assets/left-arrows/left-up.png');
+  }
+}
+
+.righRtBtn-clicked {
+  animation: righRtBtn-animate 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+// right
+
+.rightLBtn {
+  background-image: url('../public/assets/left-arrows/right-up.png');
+  width: 96px!important;
+  height: 96px!important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: unset;
+
+
+}
+
+.rightLBtn:hover {
+  background-image: url('../public/assets/left-arrows/right-hover.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes rightLBtn-animate {
+  0% {
+    background-image: url('../public/assets/left-arrows/right-up.png');
+  }
+
+  50% {
+    background-image: url('../public/assets/left-arrows/right-down.png');
+  }
+
+  100% {
+    background-image: url('../public/assets/left-arrows/right-up.png');
+  }
+}
+
+.rightLBtn-clicked {
+  animation: rightLBtn-animate 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+
+/*WALLET CONNETION*/
+
+.wallet-connect {
+  text-transform: uppercase;
+  font-family: "ultraquick";
+  background-color: transparent;
+  border: unset;
+  font-weight: 400;
+  font-size: 1.4em;
+  color: black;
+  position: fixed;
+  top: 6.6%;
+  right: 33.5%;
+}
+
+
+
+}
 
 @media only screen and (min-width: 1600px) {
 
@@ -1284,7 +2339,7 @@ main {
       /* overflow: hidden; */
       left: 50%;
       transform: translate(-50%, -50%);
-      bottom: 34.9%!important;
+      bottom: 34.99%!important;
 
     }
 
