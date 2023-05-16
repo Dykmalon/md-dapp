@@ -78,14 +78,14 @@ export default function Holder() {
         }, 500);
     };
 
-    const handleHomeClick = () => {
-        const clickAudio = new Audio(homeSound);
-        clickAudio.play();
-    }
-    const handleConnectClick = () => {
-        const clickAudio = new Audio(connectSound);
-        clickAudio.play();
-    }
+    // const handleHomeClick = () => {
+    //     const clickAudio = new Audio(homeSound);
+    //     clickAudio.play();
+    // }
+    // const handleConnectClick = () => {
+    //     const clickAudio = new Audio(connectSound);
+    //     clickAudio.play();
+    // }
 
     //images hover//
     //1
