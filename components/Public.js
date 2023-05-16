@@ -79,7 +79,7 @@ export default function Public() {
                     {/* Button group */}
                     <div className="public-buttons">
 
-                        <button className="wallet-connect" onClick={handleConnectClick}>Connect</button>
+                        <button className="wallet-connect">Connect</button>
 
                         <div className="counter">
 
@@ -93,7 +93,7 @@ export default function Public() {
 
                         <button className="open-btn" onClick={handleOpenClick} />
 
-                        <button className="public-home" onClick={handleHomeClick} />
+                        <button className="public-home"/>
 
                         <div className="public-progress">
                             <Progress current={currentSupply} total={totalSupply} />

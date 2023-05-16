@@ -103,7 +103,7 @@ export default function Holder() {
                     {/* Button group */}
                     <div className="public-buttons">
 
-                        <button className="wallet-connect" onClick={handleConnectClick}>Connect</button>
+                        <button className="wallet-connect">Connect</button>
 
                         <div className="holder-leftBtns">
 
@@ -136,7 +136,7 @@ export default function Holder() {
 
                         <button className="open-btn" onClick={handleOpenClick} />
 
-                        <button className="public-home" onClick={handleHomeClick} />
+                        <button className="public-home"/>
 
                         <div className="holders-progress">
                             <Hprogress current={currentSupply} total={totalSupply} />
