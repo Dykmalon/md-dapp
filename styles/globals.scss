@@ -328,7 +328,7 @@ main {
 
     .start-btn {
 
-      background-image: url('../public/assets/start/start-up.png');
+      background-image: url('../public/assets/start/mint-up.png');
       width: 170px;
       height: 170px;
       background-repeat: no-repeat;
@@ -344,20 +344,20 @@ main {
     }
 
     .start-btn:hover {
-      background-image: url('../public/assets/start/start-hover.png');
+      background-image: url('../public/assets/start/mint-hover.png');
     }
 
     @keyframes start-animate {
       0% {
-        background-image: url('../public/assets/start/start-up.png');
+        background-image: url('../public/assets/start/mint-up.png');
       }
 
       50% {
-        background-image: url('../public/assets/start/start-down.png');
+        background-image: url('../public/assets/start/mint-down.png');
       }
 
       100% {
-        background-image: url('../public/assets/start/start-up.png');
+        background-image: url('../public/assets/start/mint-up.png');
       }
     }
 
@@ -365,6 +365,50 @@ main {
       animation: start-animate 0.5s ease-in-out;
       animation-fill-mode: forwards;
     }
+
+    /*Claim*/
+    .claim-btn {
+
+      background-image: url('../public/assets/start/claim-up.png');
+      width: 170px;
+      height: 170px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+      border: unset;
+      /* animation: button-click 0.5s ease-in-out; */
+      position: fixed;
+      bottom: 17%;
+      left: 58%;
+      /* filter: brightness(1.5); */
+
+    }
+
+    .claim-btn:hover {
+      background-image: url('../public/assets/start/claim-hover.png');
+    }
+
+    @keyframes claim-animate {
+      0% {
+        background-image: url('../public/assets/start/claim-up.png');
+      }
+
+      50% {
+        background-image: url('../public/assets/start/claim-down.png');
+      }
+
+      100% {
+        background-image: url('../public/assets/start/claim-up.png');
+      }
+    }
+
+    .claim-clicked {
+      animation: claim-animate 0.5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+
+
 
     /*OPENSEA-PUBLIC*/
 
@@ -1137,7 +1181,7 @@ main {
 
       .start-btn {
 
-        background-image: url('../public/assets/start/start-up.png');
+        background-image: url('../public/assets/start/mint-up.png');
         width: 170px;
         height: 170px;
         background-repeat: no-repeat;
@@ -1153,25 +1197,67 @@ main {
       }
 
       .start-btn:hover {
-        background-image: url('../public/assets/start/start-hover.png');
+        background-image: url('../public/assets/start/mint-hover.png');
       }
 
       @keyframes start-animate {
         0% {
-          background-image: url('../public/assets/start/start-up.png');
+          background-image: url('../public/assets/start/mint-up.png');
         }
 
         50% {
-          background-image: url('../public/assets/start/start-down.png');
+          background-image: url('../public/assets/start/mint-down.png');
         }
 
         100% {
-          background-image: url('../public/assets/start/start-up.png');
+          background-image: url('../public/assets/start/mint-up.png');
         }
       }
 
       .start-clicked {
         animation: start-animate 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+
+      /*Claim*/
+
+      .claim-btn {
+
+        background-image: url('../public/assets/start/claim-up.png');
+        width: 170px;
+        height: 170px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: unset;
+        /* animation: button-click 0.5s ease-in-out; */
+        position: fixed;
+        bottom: 17%;
+        left: 58%;
+        /* filter: brightness(1.5); */
+
+      }
+
+      .claim-btn:hover {
+        background-image: url('../public/assets/start/claim-hover.png');
+      }
+
+      @keyframes claim-animate {
+        0% {
+          background-image: url('../public/assets/start/claim-up.png');
+        }
+
+        50% {
+          background-image: url('../public/assets/start/claim-down.png');
+        }
+
+        100% {
+          background-image: url('../public/assets/start/claim-up.png');
+        }
+      }
+
+      .claim-clicked {
+        animation: claim-animate 0.5s ease-in-out;
         animation-fill-mode: forwards;
       }
 
@@ -2577,7 +2663,7 @@ main {
   
       .start-btn {
   
-        background-image: url('../public/assets/start/start-up.png');
+        background-image: url('../public/assets/start/mint-up.png');
         width: 63px;
         height: 63px;
         background-repeat: no-repeat;
@@ -2593,20 +2679,20 @@ main {
       }
   
       .start-btn:hover {
-        background-image: url('../public/assets/start/start-hover.png');
+        background-image: url('../public/assets/start/mint-hover.png');
       }
   
       @keyframes start-animate {
         0% {
-          background-image: url('../public/assets/start/start-up.png');
+          background-image: url('../public/assets/start/mint-up.png');
         }
   
         50% {
-          background-image: url('../public/assets/start/start-down.png');
+          background-image: url('../public/assets/start/mint-down.png');
         }
   
         100% {
-          background-image: url('../public/assets/start/start-up.png');
+          background-image: url('../public/assets/start/mint-up.png');
         }
       }
   
@@ -2614,6 +2700,49 @@ main {
         animation: start-animate 0.5s ease-in-out;
         animation-fill-mode: forwards;
       }
+
+         /*claim*/
+  
+         .claim-btn {
+  
+          background-image: url('../public/assets/start/claim-up.png');
+          width: 63px;
+          height: 63px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-color: transparent;
+          border: unset;
+          /* animation: button-click 0.5s ease-in-out; */
+          position: fixed;
+          bottom: 9%;
+          left: 59%;
+          /* filter: brightness(1.5);*/
+    
+        }
+    
+        .claim-btn:hover {
+          background-image: url('../public/assets/start/claim-hover.png');
+        }
+    
+        @keyframes claim-animate {
+          0% {
+            background-image: url('../public/assets/start/claim-up.png');
+          }
+    
+          50% {
+            background-image: url('../public/assets/start/claim-down.png');
+          }
+    
+          100% {
+            background-image: url('../public/assets/start/claim-up.png');
+          }
+        }
+    
+        .claim-clicked {
+          animation: claim-animate 0.5s ease-in-out;
+          animation-fill-mode: forwards;
+        }
+    
   
       /*OPENSEA-PUBLIC*/
   
