@@ -114,11 +114,11 @@ export default function Public() {
 
                         <div className="screen-right">
 
-                            <div>
-                                <Image src="/assets/md3.png" width={150} height={100} objectFit="containe" alt="Image description" />
+                            <div className="image-melted">
+                                <Image className="melted-screen" src="/assets/md3.png" width={150} height={100} objectFit="containe" alt="Image description" />
                             </div>
 
-                            <div>
+                            <div className="info-table">
                                 <table>
 
                                     <tbody>

@@ -2376,3 +2376,831 @@ main {
   }
 
 }
+
+@media (min-width: 0px) and (max-width: 414px){
+
+  .public-main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+  
+  
+    .public-bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  
+    .public-bg div:nth-child(1) {
+  
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+  
+    }
+  
+    .public-bg div:nth-child(2) {
+  
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      visibility:hidden;
+  
+    }
+  
+    .public-bg div:nth-child(3) {
+  
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      visibility:hidden;
+  
+    }
+  
+    .public-bg div:nth-child(4) {
+  
+      position: absolute;
+      width: 130%!important;
+      height: 50%!important;
+      z-index: 4;
+      bottom: 0!important;
+      left: -15%!important;
+  
+    }
+  
+    /*=======Public-pods=======*/
+  
+    .public-pods {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      visibility:hidden;
+    }
+  
+    .public-pods div:nth-child(1) {
+  
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 7;
+      opacity: 0.4;
+  
+    }
+  
+    .public-pods div:nth-child(2) {
+  
+      position: absolute;
+      height: 19vw;
+      width: 15vw;
+      left: 7%;
+      top: 29%;
+      z-index: 6;
+      filter: blur(2px);
+    }
+  
+    .public-pods div:nth-child(3) {
+  
+      position: absolute;
+      height: 19vw;
+      width: 15vw;
+      right: 6%;
+      top: 29%;
+      z-index: 6;
+      filter: blur(2px);
+    }
+  
+    /*========PUBLIC BUTTONS=======*/
+  
+    .public-buttons {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 7;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      // max-width: 1600px;
+      // max-height: 1000px;
+  
+  
+      /*MINUS*/
+  
+      .minus-btn {
+        background-image: url('../public/assets/minus/minus-up.png');
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: unset;
+        /* animation: button-click 0.5s ease-in-out; */
+        position: fixed;
+        bottom: 10%;
+        left: 21%;
+        filter: brightness(1.5);
+  
+      }
+  
+      .minus-btn:hover {
+        background-image: url('../public/assets/minus/minus-hover.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  
+      @keyframes minus-animate {
+        0% {
+          background-image: url('../public/assets/minus/minus-up.png');
+        }
+  
+        50% {
+          background-image: url('../public/assets/minus/minus-down.png');
+        }
+  
+        100% {
+          background-image: url('../public/assets/minus/minus-up.png');
+        }
+      }
+  
+      .minus-clicked {
+        animation: minus-animate 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+  
+      /*PLUS*/
+  
+      .plus-btn {
+  
+        background-image: url('../public/assets/plus/plus-up.png');
+
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: unset;
+        /* animation: button-click 0.5s ease-in-out; */
+        position: fixed;
+        bottom: 10%;
+        left: 45%;
+        filter: brightness(1.5);
+  
+      }
+  
+      .plus-btn:hover {
+        background-image: url('../public/assets/plus/plus-hover.png');
+      }
+  
+      @keyframes plus-animate {
+        0% {
+          background-image: url('../public/assets/plus/plus-up.png');
+        }
+  
+        50% {
+          background-image: url('../public/assets/plus/plus-down.png');
+        }
+  
+        100% {
+          background-image: url('../public/assets/plus/plus-up.png');
+        }
+      }
+  
+      .plus-clicked {
+        animation: plus-animate 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+  
+      /*START*/
+  
+      .start-btn {
+  
+        background-image: url('../public/assets/start/start-up.png');
+        width: 63px;
+        height: 63px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: unset;
+        /* animation: button-click 0.5s ease-in-out; */
+        position: fixed;
+        bottom: 9%;
+        left: 59%;
+        /* filter: brightness(1.5);*/
+  
+      }
+  
+      .start-btn:hover {
+        background-image: url('../public/assets/start/start-hover.png');
+      }
+  
+      @keyframes start-animate {
+        0% {
+          background-image: url('../public/assets/start/start-up.png');
+        }
+  
+        50% {
+          background-image: url('../public/assets/start/start-down.png');
+        }
+  
+        100% {
+          background-image: url('../public/assets/start/start-up.png');
+        }
+      }
+  
+      .start-clicked {
+        animation: start-animate 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+  
+      /*OPENSEA-PUBLIC*/
+  
+      .open-btn {
+  
+        background-image: url('../public/assets/open/os-up.png');
+        width: 23px;
+        height: 23px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: unset;
+        position: fixed;
+        bottom: 7%;
+        right: 17%;
+  
+  
+      }
+  
+      .open-btn:hover {
+        background-image: url('../public/assets/open/os-hover.png');
+      }
+  
+      @keyframes open-animate {
+        0% {
+          background-image: url('../public/assets/open/os-up.png');
+        }
+  
+        50% {
+          background-image: url('../public/assets/open/os-down.png');
+        }
+  
+        100% {
+          background-image: url('../public/assets/open/os-up.png');
+        }
+      }
+  
+      .open-clicked {
+        animation: open-animate 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+  
+  
+      /*Public home*/
+  
+      .public-home {
+        background-image: url(/_next/static/media/home.e6a2798a.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border: unset;
+    width: 13px;
+    height: 11px;
+    position: fixed;
+    top: 53%;
+    left: 25.5%;
+      }
+  
+  
+      /*HOLDER BUTTONS*/
+  
+      .holder-leftBtns {
+        position: fixed;
+    bottom: 11%;
+    left: 20%;
+    display: flex;
+  
+  
+      }
+  
+      .leftBtn {
+        background-image: url('../public/assets/left-arrows/left-up.png');
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: unset;
+  
+  
+      }
+  
+      .leftBtn:hover {
+        background-image: url('../public/assets/left-arrows/left-hover.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  
+      @keyframes leftBtn-animate {
+        0% {
+          background-image: url('../public/assets/left-arrows/left-up.png');
+        }
+  
+        50% {
+          background-image: url('../public/assets/left-arrows/left-down.png');
+        }
+  
+        100% {
+          background-image: url('../public/assets/left-arrows/left-up.png');
+        }
+      }
+  
+      .leftBtn-clicked {
+        animation: leftBtn-animate 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+  
+      
+  
+  
+      /*RIGHT*/
+  
+      .rightBtn {
+        background-image: url('../public/assets/left-arrows/right-up.png');
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: unset;
+  
+  
+      }
+  
+      .rightBtn:hover {
+        background-image: url('../public/assets/left-arrows/right-hover.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  
+      @keyframes rightBtn-animate {
+        0% {
+          background-image: url('../public/assets/left-arrows/right-up.png');
+        }
+  
+        50% {
+          background-image: url('../public/assets/left-arrows/right-down.png');
+        }
+  
+        100% {
+          background-image: url('../public/assets/left-arrows/right-up.png');
+        }
+      }
+  
+      .rightBtn-clicked {
+        animation: rightBtn-animate 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+  
+      /*START*/
+  
+  
+      .HolderstartBtn {
+        background-image: url('../public/assets/melt/melt_up.png');
+        width: 61px;
+        height: 61px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: unset;
+  
+  
+      }
+  
+      .HolderstartBtn:hover {
+        background-image: url('../public/assets/melt/melt_hover.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  
+      @keyframes HolderstartBtn-animate {
+        0% {
+          background-image: url('../public/assets/melt/melt_up.png');
+        }
+  
+        50% {
+          background-image: url('../public/assets/melt/melt_down.png');
+        }
+  
+        100% {
+          background-image: url('../public/assets/melt/melt_up.png');
+        }
+      }
+  
+      .HolderstartBtn-clicked {
+        animation: HolderstartBtn-animate 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+  
+      .holder-start {
+  
+        position: fixed;
+        bottom: 10%;
+        left: 41.5%;
+        display: flex;
+  
+      }
+  
+      /*RIGHT-RIGHT*/
+  
+      .holder-rightBtns {
+        position: fixed;
+        bottom: 11%;
+        left: 56%;
+        display: flex;
+  
+  
+      }
+  
+      .righRtBtn {
+        background-image: url('../public/assets/left-arrows/left-up.png');
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: unset;
+  
+  
+      }
+  
+      .righRtBtn:hover {
+        background-image: url('../public/assets/left-arrows/left-hover.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  
+      @keyframes righRtBtn-animate {
+        0% {
+          background-image: url('../public/assets/left-arrows/left-up.png');
+        }
+  
+        50% {
+          background-image: url('../public/assets/left-arrows/left-down.png');
+        }
+  
+        100% {
+          background-image: url('../public/assets/left-arrows/left-up.png');
+        }
+      }
+  
+      .righRtBtn-clicked {
+        animation: righRtBtn-animate 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+  
+      // right
+  
+      .rightLBtn {
+        background-image: url('../public/assets/left-arrows/right-up.png');
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: unset;
+  
+  
+      }
+  
+      .rightLBtn:hover {
+        background-image: url('../public/assets/left-arrows/right-hover.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  
+      @keyframes rightLBtn-animate {
+        0% {
+          background-image: url('../public/assets/left-arrows/right-up.png');
+        }
+  
+        50% {
+          background-image: url('../public/assets/left-arrows/right-down.png');
+        }
+  
+        100% {
+          background-image: url('../public/assets/left-arrows/right-up.png');
+        }
+      }
+  
+      .rightLBtn-clicked {
+        animation: rightLBtn-animate 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+  
+  
+      /*WALLET CONNETION*/
+  
+      .wallet-connect {
+        
+    text-transform: uppercase;
+    font-family: "ultraquick";
+    background-color: transparent;
+    border: unset;
+    font-weight: 400;
+    font-size: 0.55em;
+    color: black;
+    position: fixed;
+    top: 53.6%;
+    right: 27.5%;
+
+      }
+  
+  
+      /*====Public quan====*/
+  
+      span {
+  
+        font-family: "robotInvaders";
+        font-size: 1.5em;
+        position: fixed;
+        bottom: 11.8%;
+        left: 37%;
+        color: #ffd82a;
+      }
+  
+  
+    }
+  
+  
+    /*=========Screens========*/
+  
+    .public-screen {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      z-index: 6;
+      max-width: 1600px;
+      max-height: 1000px;
+    }
+  
+    .screen-left {
+      width: 23.6%;
+    height: 17.6%;
+    background: #71468a;
+    top: 60.7%;
+    left: 23.67%;
+    position: fixed;
+  
+      video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    .screen-right {
+      width: 26.55%;
+      height: 18.6%;
+      background: black;
+      top: 59.5%;
+      right: 22.2%;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  
+      video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .melted-screen{
+        width: inherit;
+        height: inherit;
+      }
+
+      .image-melted{
+        width: 56px;
+        height: 32px;
+      }
+    }
+  
+    .info-table{
+
+      margin-top: -1em;
+    }
+  
+    /*table*/
+    table {
+  
+      border-collapse: separate;
+      border-spacing: 20px;
+    }
+  
+    td {
+      text-transform: uppercase;
+      font-family: "ultraquick";
+      font-weight: 400;
+      font-size:7px;
+    }
+  
+    table td:nth-child(2) {
+      text-align: end;
+    }
+  
+    /*===================PROGRESS BAR==================*/
+  
+    .public-progress {
+      position: absolute;
+      width: 34.69%;
+      height: 20px;
+      /* overflow: hidden; */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      bottom: 14.55%;
+    }
+  
+    .holders-progress{
+      position: absolute;
+    width: 34.69%;
+    height: 20px;
+    /* overflow: hidden; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 14.55%;
+  
+    }
+  
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background-color: #ccc;
+      // border-radius: 10px;
+      position: relative;
+    }
+  
+    .progress-bar .fill {
+      height: 100%;
+      // border-radius: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  
+    .progress-bar .label {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size:6px;
+      color: #333;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  
+  
+    /*STICKY NOTES*/
+  
+    .sticky-notes {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 6;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transform-style: preserve-3d;
+  
+      div:nth-child(1) {
+        width: 46px;
+        height: 46px;
+        position: absolute;
+        left: 19.4%;
+        top: 57%;
+        transform-style: preserve-3d;
+  
+  
+        .sticky1 {
+          transform-style: preserve-3d;
+          animation: sticky1-anim 7s ease-in-out infinite;
+        }
+  
+        @keyframes sticky1-anim {
+          0% {
+            transform: rotate(-5deg);
+          }
+  
+          50% {
+            transform: rotate(5deg);
+          }
+  
+          100% {
+            transform: rotate(-5deg);
+          }
+        }
+  
+      }
+  
+      div:nth-child(2) {
+
+        width: 46px;
+        height: 46px;
+        position: absolute;
+        left: 46.5%;
+        top: 60%;
+      
+        .sticky2 {
+          transform-style: preserve-3d;
+          animation: sticky2-anim 7s ease-in-out infinite;
+        }
+  
+        @keyframes sticky2-anim {
+          0% {
+            transform: rotate(7deg);
+          }
+  
+          50% {
+            transform: rotate(-7deg);
+          }
+  
+          100% {
+            transform: rotate(7deg);
+          }
+        }
+  
+  
+      }
+  
+      div:nth-child(3) {
+        width: 46px;
+        height: 46px;
+        position: absolute;
+        left: 37.5%;
+        bottom: 6%;
+    
+  
+        .sticky3 {
+          transform-style: preserve-3d;
+          animation: sticky3-anim 7s ease-in-out infinite;
+        }
+  
+        @keyframes sticky3-anim {
+          0% {
+            transform: rotate(-6deg);
+          }
+  
+          50% {
+            transform: rotate(5deg);
+          }
+  
+          100% {
+            transform: rotate(-6deg);
+          }
+        }
+  
+      }
+  
+      div:nth-child(4) {
+        width: 46px;
+        height: 46px;
+        position: absolute;
+        right: 26.5%;
+        bottom: 3%;
+  
+        .sticky4 {
+          transform-style: preserve-3d;
+          animation: sticky4-anim 7s ease-in-out infinite;
+        }
+  
+        @keyframes sticky4-anim {
+          0% {
+            transform: rotate(-4deg);
+          }
+  
+          50% {
+            transform: rotate(7deg);
+          }
+  
+          100% {
+            transform: rotate(-4deg);
+          }
+        }
+      }
+  
+    }
+  }
+}
